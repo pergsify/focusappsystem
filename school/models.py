@@ -16,3 +16,8 @@ class Teacher(models.Model):
 class SchoolYear(models.Model):
 	#start_Year = models.DateField()
 	start_Year = models.IntegerField(max_length=4, choices=YEAR_CHOICES, default=datetime.datetime.now().year)
+
+
+class Faculty(models.Model):
+	name = models.CharField(max_length=200)
+	
